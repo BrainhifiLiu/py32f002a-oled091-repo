@@ -1,0 +1,17 @@
+--cpu Cortex-M0+
+".\objects\system_py32f0xx.o"
+".\objects\startup_py32f002xx.o"
+".\objects\main.o"
+".\objects\py32f0xx_it.o"
+".\objects\py32f0xx_ll_gpio.o"
+".\objects\py32f0xx_ll_tim.o"
+".\objects\py32f0xx_ll_exti.o"
+".\objects\py32f0xx_ll_rcc.o"
+".\objects\py32f0xx_ll_pwr.o"
+".\objects\py32f0xx_ll_utils.o"
+".\objects\oled091.o"
+".\objects\t_iic.o"
+--library_type=microlib --strict --scatter ".\Objects\SW-101-PYB_Board.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\SW-101-PYB_Board.map" -o .\Objects\SW-101-PYB_Board.axf
